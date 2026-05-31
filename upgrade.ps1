@@ -4,7 +4,7 @@ param(
     [string[]]$ScoreFiles = @(),
     [string[]]$ScoreDirs = @(),
     [int]$MinScore = 45,
-    [long]$MinFileSizeBytes = 2048KB,
+    [long]$MinFileSizeBytes = 10KB,
     [long]$MaxFileSizeBytes = 80MB,
     [int]$ContentSampleChars = 120000,
     [string]$ArchiveOutputDir = (Join-Path $env:TEMP 'thesis-scan-results'),
